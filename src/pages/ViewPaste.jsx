@@ -12,9 +12,6 @@ const ViewPaste = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetchPaste();
-  }, [id]);
-
   const fetchPaste = async () => {
     try {
       setLoading(true);
@@ -30,6 +27,10 @@ const ViewPaste = () => {
       setLoading(false);
     }
   };
+
+  fetchPaste();
+}, [id]);
+
 
   const formatDate = (dateString) => {
     if (!dateString) return 'Never';
