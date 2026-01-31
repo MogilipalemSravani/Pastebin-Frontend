@@ -1,9 +1,9 @@
 import axios from 'axios';
 
 const API_BASE_URL =
-  process.env.REACT_APP_API_BASE_URL || 'http://localhost:8080';
+  process.env.REACT_APP_API_BASE_URL || 'https://pastebin-backend-15.onrender.com/';
 const SITE_URL =
-  process.env.REACT_APP_SITE_URL || 'http://localhost:3000';
+  process.env.REACT_APP_SITE_URL || 'https://pastebin-backend-15.onrender.com/';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
